@@ -1,0 +1,254 @@
+@charset "UTF-8";
+body {
+  background-color: rgb(245, 240, 236);
+  min-width: 375px;
+}
+
+.header-btn {
+  background: rgb(220, 193, 171);
+  border: 1px solid rgb(27, 91, 49) !important;
+}
+
+.bg-grean {
+  color: rgb(245, 240, 236);
+  background-color: rgb(27, 91, 49);
+}
+
+.container-block {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+h5,
+h4,
+h3,
+h2,
+h1 {
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -2px;
+  color: white;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+a,
+p {
+  color: white;
+  text-decoration: none;
+}
+
+h4 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.05em;
+}
+
+button {
+  color: #1B5B31;
+}
+
+.rounded {
+  border-radius: 28px !important;
+  border: none;
+}
+
+.row {
+  --bs-gutter-x: 0rem;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.custom-animation {
+  animation: slideInLeft 0.5s ease forwards;
+}
+
+.ImageContainear {
+  max-width: 1440px;
+  max-height: 100%;
+  margin: 20px auto;
+}
+.ImageContainear section {
+  margin-top: -1020px;
+  position: absolute;
+}
+.ImageContainear button {
+  border: 1px solid black;
+  background: rgb(220, 193, 171);
+}
+
+.ImageContainear .title {
+  font-size: 25px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 15px;
+}
+
+.ImageContainear .image-container {
+  -moz-columns: 3 250px;
+       columns: 3 250px;
+}
+
+.ImageContainear .image-container img {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+}
+
+.more_section {
+  display: none;
+}
+
+.z-index {
+  margin-top: 30px;
+  z-index: -2;
+}
+
+.img-img {
+  display: none;
+}
+
+@media (min-width: 1400px) {
+  .img-img {
+    display: block;
+  }
+}
+.carousel {
+  background: rgb(220, 193, 171);
+}
+
+.navbar-collapse {
+  flex-grow: inherit;
+}
+
+.dropdown-toggle::after {
+  display: none;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+.nav-icon-5 {
+  width: 35px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.nav-icon-5 span {
+  background-color: #fff;
+  position: absolute;
+  border-radius: 2px;
+  transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  width: 100%;
+  height: 4px;
+  transition-duration: 500ms;
+}
+
+.nav-icon-5 span:nth-child(1) {
+  top: 0px;
+  left: 0px;
+}
+
+.nav-icon-5 span:nth-child(2) {
+  top: 13px;
+  left: 0px;
+  opacity: 1;
+}
+
+.nav-icon-5 span:nth-child(3) {
+  bottom: 0px;
+  left: 0px;
+}
+
+.nav-icon-5:not(.open):hover span:nth-child(1) {
+  transform: rotate(-2deg) scaleY(1.3);
+}
+
+.nav-icon-5:not(.open):hover span:nth-child(2) {
+  transform: rotate(1deg) scaleY(1.2);
+}
+
+.nav-icon-5:not(.open):hover span:nth-child(3) {
+  transform: rotate(-1deg) scaleY(1.1);
+}
+
+.nav-icon-5.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 13px;
+}
+
+.nav-icon-5.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-icon-5.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 13px;
+}
+
+.hover-card {
+  position: relative;
+  transition: transform 0.3s ease;
+  /* Анимация преобразования */
+}
+
+.hover-card:hover {
+  box-shadow: 10px 5px 5px #1B5B31;
+  transform: scale(1.05);
+  /* Увеличение размера при наведении */
+}
+
+/* Стили для заголовка карточки при наведении */
+.hover-card .card-title {
+  transition: color 0.3s ease;
+  /* Анимация изменения цвета текста */
+}
+
+.hover-card:hover .card-title {
+  color: blue;
+  /* Изменение цвета текста при наведении */
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+/* Применение анимации к блоку */
+.disappear-animation {
+  animation: disappear 0.5s ease forwards;
+}/*# sourceMappingURL=style.css.map */
